@@ -1,0 +1,35 @@
+<ul class="main-navigation">
+  <section (click)="togglemenu()">
+    <li><img class="navMenu" src="assets/menu.png" alt="Menu"></li>
+  </section>
+  <section class="menucontainer" [ngClass]="{active: showMenu }">
+    <li><a>Home</a></li>
+    <li><a>Main 1</a>
+      <ul>
+        <li><a>Level 1</a></li>
+        <li><a>Level 2</a>
+          <ul>
+            <li><a>Level 2_1</a></li>
+            <li><a>Level 2_2</a></li>
+            <li><a>Level 2_3</a></li>
+          </ul>
+        </li>
+        <li><a>Level 3</a>
+          <ul>
+            <li><a>Level 3_1</a></li>
+            <li><a>Level 3_2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a>Main 2</a>
+      <ul>
+        <li><a>Level 1</a></li>
+        <li><a>Level 2</a></li>
+        <li><a>Level 3</a></li>
+        <li><a>Level 4</a></li>
+      </ul>
+    </li>
+    <li><a>Main 3</a></li>
+  </section>
+</ul>
